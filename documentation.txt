@@ -1,0 +1,42 @@
+Imports Libraries:
+
+requests: To fetch web pages.
+BeautifulSoup: To read and extract information from web pages.
+pandas: To create and save data in CSV files.
+json: To save data in JSON files.
+Getting Web Page Content:
+
+Function: get_html_content(url)
+What it does: Fetches the web page content from the given URL.
+Returns: The raw HTML content of the page.
+Extracting Quotes from the Web Page:
+
+Function: parse_html(html_content)
+What it does: Reads the HTML content and finds all quotes, authors, and tags.
+Returns: A list of dictionaries, each containing a quote, its author, and tags.
+Saving Data to a CSV File:
+
+Function: save_to_csv(data, filename)
+What it does: Saves the list of quotes to a CSV file with the given filename.
+Uses: pandas to handle the data and write it to a file.
+Saving Data to a JSON File:
+
+Function: save_to_json(data, filename)
+What it does: Saves the list of quotes to a JSON file with the given filename.
+Uses: json to write the data to a file.
+Main Function:
+
+Function: main()
+What it does:
+Defines the URL to scrape.
+Gets the HTML content from the URL.
+Extracts the quotes, authors, and tags from the HTML.
+Saves the extracted data to both CSV and JSON files.
+Prints a message confirming the data has been saved.
+Running the Script:
+
+Code: if __name__ == '__main__': main()
+What it does: Ensures the main function runs only if the script is executed directly, not when imported.
+Example Output:
+Data has been saved to quotes.csv and quotes.json
+This message appears when the script finishes running and saves the data to the specified files.
